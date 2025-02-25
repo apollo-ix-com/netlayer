@@ -1,17 +1,17 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 // import mImg from "../../../public/images/casestudy/mm_img.png";
 
-interface ServiceBannerProps {
-  title: string;
-  description: string;
-  img: StaticImageData;
-}
+// interface ServiceBannerProps {
+//   title: string;
+//   description: string;
+//   img: StaticImageData;
+// }
 
 
 import Link from "next/link";
 
-const ServiceBanner: React.FC<any> = ({ title }) => {
+const ServiceBanner  = () => {
   return (
     <div className="megamenu_case">
       <h3>Peering</h3>

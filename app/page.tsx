@@ -1,4 +1,4 @@
-import { Fade } from "react-awesome-reveal";
+
 import Bg from "../public/images/bg/hero-bg02.jpg";
 import icon from "../public/images/icon/magic.svg";
 import gImg1 from "../public/images/gallery/cp-img01.jpg";
@@ -7,9 +7,6 @@ import gImg3 from "../public/images/gallery/cp-img03.jpg";
 import gImg4 from "../public/images/gallery/cp-img04.jpg";
 import gImg5 from "../public/images/gallery/cp-img05.jpg";
 import gImg6 from "../public/images/gallery/cp-img06.jpg";
-import heroImg from "../public/images/hero/hero-img02.png";
-import heroImg2 from "../public/images/hero/hero-img03.png";
-import heroImg3 from "../public/images/hero/hero-img04.png";
 import Image from "next/image";
 
 export default function Home() {

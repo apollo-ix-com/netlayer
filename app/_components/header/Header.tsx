@@ -1,20 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import icon13 from "../../../public/images/icon/sms-white-icon01.svg";
-import clogo1 from "../../../public/images/logo/client-logo.svg";
-import avatar from "../../../public/images/logo/avatar.svg";
-import quote from "../../../public/images/icon/quote.png";
 import MobileMenu from "./_mobile_menu";
 import { MenuItem, menuData } from "./menuData";
 import Logo from "./_logo";
 import HeaderTop from "./_header-top";
-import SocialArea from "./_social-area";
-import Author from "./company/_author";
-import Review from "./company/_review";
-import ServiceBanner from "./services/_banner";
 import ServiceMegaMenu from "./services/ServiceMegaMenu";
 import MegaMenu from "./company/MegaMenu";
 
@@ -22,27 +15,21 @@ const Header: React.FC = () => {
   const [mobailActive, setMobailState] = useState(false);
   const [isSticky, setSticky] = useState(false);
 
-  const [selectedTitle, setSelectedTitle] = useState<string | null>(null);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
 
-  const handleTitleClick = (title: string) => {
-    setSelectedTitle(title === selectedTitle ? null : title); // Toggle the selection
-  };
+    window.addEventListener("scroll", handleScroll);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 80) {
-  //       setSticky(true);
-  //     } else {
-  //       setSticky(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div

@@ -1,5 +1,5 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 interface ReviewProps {
   name?: string;
@@ -7,7 +7,7 @@ interface ReviewProps {
 
 import clogo1 from "./icon/client-logo.svg";
 
-const Review: React.FC<ReviewProps> = ({ name }) => {
+const Review: React.FC<ReviewProps> = () => {
   return (
     <div className="review_short_info_2 border">
       <div className="review_admin_logo">

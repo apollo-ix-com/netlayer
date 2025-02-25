@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 // import icon1 from "../../public/images/shape/trangle-shape1.png";
 
