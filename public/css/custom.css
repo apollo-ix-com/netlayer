@@ -1,0 +1,25 @@
+
+/* Works on Firefox */
+*, .nk-scrollbar{
+    scrollbar-width: thin;
+    scrollbar-color: #0f55dc #e2f5f0;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar, .nk-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  *::-webkit-scrollbar-track, .nk-scrollbar::-webkit-scrollbar-track {
+    background: #e2f5f0;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #0f55dc;
+    border-radius: 10px;
+    border: 1px solid #e2f5f0;
+    box-shadow: inset 2px 2px 5px 0 rgba(#e2f5f0, 0.2);
+  }
+
+
+
