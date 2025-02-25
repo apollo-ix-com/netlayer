@@ -1,5 +1,4 @@
 import React from "react";
-import { StaticImageData } from "next/image";
 // import mImg from "../../../public/images/casestudy/mm_img.png";
 
 // interface ServiceBannerProps {
